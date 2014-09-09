@@ -1,3 +1,4 @@
+source "https://rubygems.org"
+
 gem 'rack-redirect'
 
-disable_system_gems

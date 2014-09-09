@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rack (1.5.2)
+    rack-redirect (0.0.3)
+      rack
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rack-redirect
