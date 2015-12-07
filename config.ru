@@ -1,5 +1,4 @@
 require "bundler/setup"
+require_relative "lib/redirect"
 
-run lambda { |env|
-  [301, {'Content-Type' => 'text/plain','Location' => 'https://atmos.org'}, ['See Ya!']]
-}
+run Redirect.new

@@ -4,14 +4,13 @@ ENV["RACK_ENV"] ||= "test"
 require "bundler/setup"
 require "rack/test"
 
+require_relative "../lib/redirect"
+
 RSpec.configure do |config|
   config.include Rack::Test::Methods
-
   config.order = "random"
 
-  config.before do
-  end
-
   def app
+    Redirect.new
   end
 end
